@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/* Main Colors */
+:root
+{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body
+{
+    background-color: var(--main-bg);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    color: var(--soft-blue);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.card
+{
+    width: 350px;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 25px 25px;
+    border-radius: 10px;
+    margin: 15% auto;
+    position: relative;
+}
+
+.nft
+{
+    width: 300px;
+    border-radius: 5%;
+    align-items: center;
+}
+
+.nftoverlay
+{
+    width: 300px;
+    height: 300px;
+    top: 25px;
+    opacity: 0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--cyan);
+    position: absolute;
+}
+
+.nftoverlay:hover
+{
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Equilibrium */
+.equilibrium
+{
+    color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.equilibrium p
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.equilibrium:hover
+{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eth-time
+{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.eth-time img
+{
+    margin-right: 10px;
+}
+
+.ethcolor
+{
+    color: var(--cyan);
+}
+
+.line
+{
+    width: 300px;
+    height: 3px;
+    background-color: var(--line);
+    margin-bottom: 25px;
+}
+/* Creator */
+.creator
+{
+    align-items: center;
+    display: flex;
+}
+
+.creator img
+{
+    width: 40px;
+    border: solid;
+    border-color: var(--white);
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.creator-name
+{
+    color: var(--white);
+}
+
+.creator-name:hover
+{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer
+{
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+.footer a
+{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer a:hover
+{
+    color: var(--cyan);
+    cursor: pointer;
+    transition: 0.3s;
+}
